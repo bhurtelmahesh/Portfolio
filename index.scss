@@ -254,6 +254,62 @@ section{
 
 }
 
+.about-stats{
+    padding-bottom: 4rem;
+    .progress-bars{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        .progress-bar{
+            display: flex;
+            flex-direction: column;
+            .prog-title{
+               text-transform: uppercase;
+               font-weight: 500; 
+            }
+            .progress-con{
+                display: flex;
+                align-items: center;
+                .prog-txt{
+                    color: var(--color-gray2);
+                }
+                .progress{
+                   width: 100%;
+                   height: .45rem;
+                   background-color: var(--color-gray4);
+                   margin-left: 1rem;
+                   position: relative;
+                   span{
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       height: 100%;
+                       background-color: var(--color-secondary);
+                       transition: all .4s ease-in-out;
+                       width: 90%;
+                   }
+
+                   .css{
+                        width: 70%;
+                   }
+                   .js{
+                      width: 50%;
+                   }
+                   .react{
+                        width: 40%;
+                   }
+                   .python{
+                        width: 60%;
+                   }
+                   .wp{
+                        width: 70%;
+                   }
+                }
+            }
+        }
+    }
+}
+
 
 
 //independent components
@@ -337,5 +393,23 @@ section{
           font-weight: 800;
           font-size: 6.3rem;
         }
+    }
+}
+
+.stat-title{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 1px;
+        background-color: var(--color-gray5);
     }
 }
