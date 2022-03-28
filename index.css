@@ -23,17 +23,9 @@
 }
 
 .light {
-  --color-primary: #6122b4;
-  --color-secondary: #ffc400;
-  --color-white: #fff;
-  --color-black: rgb(56, 65, 44);
-  --color-gray0: #f9f7f1;
-  --color-gray1: #0e1df1;
-  --color-gray2: #000000;
-  --color-gray3: #e70de7;
-  --color-gray4: #428844;
-  --color-gray5: #9312dd;
-  --color-gray6: #000000;
+  --color-primary: #311286;
+  --color-secondary: #27AE60;
+  --color-gray2: #ffffff;
 }
 
 body {
@@ -43,6 +35,10 @@ body {
   color: var(--color-white);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+body h3 {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 a {
