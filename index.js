@@ -27,4 +27,3 @@ const PageTrans = () => {
     });
 };
 PageTrans();
-
